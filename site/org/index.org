@@ -1,0 +1,42 @@
+#+TITLE: sensei
+#+SUBTITLE: Use LLMs for search, not work
+#+OPTIONS: toc:nil num:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+<div class="hero">
+  <img src="icon.svg" alt="" class="mark" width="96" height="96">
+  <h1>sensei</h1>
+  <p class="tagline">Use LLMs for search, not work</p>
+</div>
+#+END_EXPORT
+
+The agent works the problem through, then hands you a reading list and a set of katas instead of the answer. You do the real work afterwards, knowing how.
+
+#+BEGIN_SRC sh
+npx github:soniccyclone/sensei init
+#+END_SRC
+
+* How it works
+:PROPERTIES:
+:CUSTOM_ID: how
+:END:
+
+1. *A reading list*: primary sources at the versions you have pinned, the exact sections to read, and direct quotes. Under a page of the agent's own prose.
+2. *Katas*, one to three, in a harness you enter with one command. Every check is red until you make it pass.
+3. *A check*: the harness is run on your attempt, and each failure is answered with the passage that covers it. Never with the fix.
+
+The agent solves the problem in order to know what to point at, and then does not show the solution.
+
+* Why
+:PROPERTIES:
+:CUSTOM_ID: why
+:END:
+
+An LLM speeds up search and slows down everything else, because everything else is learning, and learning is the one thing you cannot outsource. Having the agent do the work feels fast and leaves you where you started. Having it find what to read, and then getting out of the way, is the one use that compounds.
+
+#+BEGIN_EXPORT html
+<footer>
+  <a href="https://github.com/soniccyclone/sensei">Source</a> ·
+  <a href="./docs.html">Documentation</a>
+</footer>
+#+END_EXPORT

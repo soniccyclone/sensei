@@ -1,0 +1,35 @@
+{
+  "name": "@soniccyclone/sensei",
+  "version": "0.1.0",
+  "description": "Use LLMs for search, not work. Reading lists and katas instead of answers, as installable skills for Claude Code, Cursor, Copilot, and opencode",
+  "type": "module",
+  "bin": {
+    "sensei": "bin/sensei.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:pty": "node --test \"test/pty/*.test.js\"",
+    "test:all": "npm test && npm run test:pty",
+    "build:site": "sh site/build.sh",
+    "test:site": "sh site/build.sh && node --test \"test/site/*.test.js\""
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soniccyclone/sensei.git"
+  },
+  "devDependencies": {
+    "node-pty": "^1.1.0"
+  },
+  "author": "Nathan Barlow"
+}

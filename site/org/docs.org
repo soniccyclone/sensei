@@ -1,0 +1,27 @@
+#+TITLE: sensei documentation
+#+OPTIONS: toc:nil num:nil author:nil date:nil
+
+#+BEGIN_EXPORT html
+<div class="hero compact">
+  <img src="icon.svg" alt="" class="mark">
+  <h1>documentation</h1>
+  <p class="tagline">Four skills. Each page is the file the agent actually loads.</p>
+</div>
+#+END_EXPORT
+
+* The pipeline
+:PROPERTIES:
+:CUSTOM_ID: pipeline
+:END:
+
+- [[./skill-sensei.html][sensei]] — runs the whole pipeline
+- [[./skill-sensei-read.html][sensei-read]] — task to reading list, researched privately first
+- [[./skill-sensei-kata.html][sensei-kata]] — reading list to katas, with a harness and red tests
+- [[./skill-sensei-check.html][sensei-check]] — your attempt to the passage that covers the gap
+
+#+BEGIN_EXPORT html
+<footer>
+  <a href="./index.html">Home</a> ·
+  <a href="https://github.com/soniccyclone/sensei">Source</a>
+</footer>
+#+END_EXPORT
