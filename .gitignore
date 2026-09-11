@@ -1,0 +1,14 @@
+# Node
+node_modules/
+
+# Site build artifacts. Generated from skills/ and org/ on every build.
+site/www/
+site/gen/
+site/org/skill-*.org
+
+# Scratch environments inside planning directories. The scripts are kept; the
+# environments that ran them are not.
+.necklace/**/repl/.venv/
+.necklace/**/repl/__pycache__/
+.necklace/**/repl/node_modules/
+.necklace/**/repl/package-lock.json
