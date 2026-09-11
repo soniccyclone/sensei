@@ -1,0 +1,48 @@
+It seems like LLMs legitimately do speed up "search" activities. But
+anything that goes beyond that is legitimately negative velocity that
+"feels" faster in the moment, since it removes the pain of
+learning. Because it removes learning. So you never ever speed up and
+LLMs are *always* slower than experts.
+So we should have a system that just uses LLMs to accelerate humans
+becoming experts. It need only pull together direct quotations and
+heavy citations to put together learning resources for a
+user. Prefering to keep its own prose as minimal as possible and
+trying to reference documentation and learning links directly far
+more. With direct quotes when that is ok. I will of course be
+designing this for code first, probs an opencode skill to start. It
+should only ingest my codebase, then websearch docs for what we are
+using, then present to me where to go and what exactly to read and
+what exercises to do to become a master in the moment of the problem
+at hand. Then once I do those exercises I will have a mental model of
+how to address the problem.
+So yeah actually it's not even agentifying a REPL. That's a step too
+far! The AI should setup the REPL harness for me (or stub out a test
+if tests are what need to be used instead of REPLs in a degenerate
+language) and then invite the me to complete a task it gives me to
+learn properly from the resources it already sent me as links to read
+through. Thus transferring all of its knowledge to me as quickly as
+possible before I then go off and do the real work.
+This should legitimately speed up the ramp up phase of development
+work, the legitimately slow phase where you are usually drowning in a
+sea of SEO slop trying to just LEARN THE ONE THING YOU NEED before
+getting back to slamming out code extremely quickly.
+That is the /one/ thing LLMs are truly good at. And it's what I ought
+to use them for. So I should probably build an entire app that does
+only this. Can work either standalone or literally attached to a
+codebase.
+So it is this:
+- Ask LLM about a topic (either completing a task in a codebase or
+  even just learning a math thing)
+- It searches in every fashion it needs to determine how it would have
+  accomplished said task
+- It does not show you that, it shows you only the citations and
+  light tutorial style prose to let you get started learning on your
+  own reading the direct source
+- It then presents maybe like one to three example problems it invites
+  you to complete after you finish the required reading, thus
+  completing the knowledge transfer
+This is *exactly* how real life learning from master to student
+works. If the AI is simply a highly knowledgable but highly foolish
+master, this system /may/ be useful. It could still be complete junk
+because the AI misses stuff so often.
+
